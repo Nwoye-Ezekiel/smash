@@ -5,9 +5,6 @@ if (localStorage.difficulty == "Easy") {
 } else if (localStorage.difficulty == "Hard") {
   document.getElementById(localStorage.difficulty).checked = true;
 }
-$(window).load(function () {
-  $(".se-pre-con").fadeOut("slow");
-})
 function difficulty(d) {
   if (d == "Easy") {
     localStorage.difficulty = "Easy";
