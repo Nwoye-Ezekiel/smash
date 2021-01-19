@@ -6,6 +6,11 @@ var time;
 var count = 0;
 var temp = 0;
 var diff = parseInt(localStorage.time, 10);
+
+$(window).load(function () {
+  $(".se-pre-con").fadeOut("slow");
+});
+
 if (localStorage.difficulty_activated == "yes") {
   var diff = parseInt(localStorage.time, 10);
 } else if (localStorage.difficulty_activated == undefined) {
