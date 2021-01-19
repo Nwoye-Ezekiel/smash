@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body
+    style="
+      background-color: #0b1b29;
+      background-image: url(1.png);
+      background-repeat: repeat;
+    "
+    class="cnt"
+  >
+    <div class="creator" style="color: white">created by Nwoye Ezekiel</div>
+    <div class="overlay"></div>
+    <a href="home.html" class="back">Back</a>
+    <div class="diff-cont">
+      <label style="cursor: pointer">
+        <input
+          type="radio"
+          id="Easy"
+          name="difficulty"
+          value="Easy"
+          onclick="localStorage.difficulty_activated = 'yes', difficulty(this.id)"
+        /><span class="diff_text">Easy</span>
+      </label>
+      <br />
+      <br />
+      <label style="cursor: pointer">
+        <input
+          type="radio"
+          id="Medium"
+          00
+          name="difficulty"
+          value="Medium"
+          onclick="localStorage.difficulty_activated = 'yes', difficulty(this.id)"
+        /><span class="diff_text">Medium</span>
+      </label>
+      <br />
+      <br />
+      <label style="cursor: pointer">
+        <input
+          type="radio"
+          id="Hard"
+          name="difficulty"
+          value="Hard"
+          onclick="localStorage.difficulty_activated = 'yes', difficulty(this.id)"
+        /><span class="diff_text">Hard</span>
+      </label>
+      <br />
+      <br />
+    </div>
+
+    <script type="text/javascript" src="difficulty.js"></script>
+  </body>
+</html>
