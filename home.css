@@ -30,32 +30,27 @@ body {
   background-color: #0B1E2E;
   z-index: 1000;
 }
-#ball-container {
-  display: flex;
+.ball-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
 }
 .ball {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  margin: 0 2px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  -webkit-animation: circle_expand 0.4s ease-in-out infinite alternate;
-  animation: circle_expand 0.4s ease-in-out infinite alternate;
-  transform: scale(0);
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  background-color: #2a4650;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 -5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-animation: zoom-fade 1.25s ease-out infinite;
+  animation: zoom-fade 1.25s ease-in-out infinite;
 }
 .ball:nth-child(2) {
-  -webkit-animation-delay: 0.133s;
-  animation-delay: 0.133s;
-}
-.ball:nth-child(3) {
-  -webkit-animation-delay: 0.267s;
-  animation-delay: 0.267s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .glass-overlay {
   position: absolute;
@@ -536,25 +531,23 @@ input[type="radio"]:checked:after{
     transform: rotate(-5deg);
   }
 }
-@-webkit-keyframes circle_expand {
+@-webkit-keyframes zoom-fade {
   0% {
     transform: scale(0);
-  }
-  60% {
-    transform: scale(1);
+    opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(4.5);
+    opacity: 0;
   }
 }
-@keyframes circle_expand {
+@keyframes zoom-fade {
   0% {
     transform: scale(0);
-  }
-  60% {
-    transform: scale(1);
+    opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(4.5);
+    opacity: 0;
   }
 }
