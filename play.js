@@ -6,15 +6,6 @@ var time;
 var count = 0;
 var temp = 0;
 var diff = parseInt(localStorage.time, 10);
-
-var isChrome =
-  /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if (!isChrome) {
-  document.getElementById("iframeAudio").remove();
-} else {
-  document.getElementById("song").remove();
-}
-
 if (localStorage.difficulty_activated == "yes") {
   var diff = parseInt(localStorage.time, 10);
 } else if (localStorage.difficulty_activated == undefined) {
