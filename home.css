@@ -43,7 +43,8 @@ body {
   border-radius: 50%;
   left: calc(50% - 10px);
   top: calc(50% - 10px);
-  background-color: #2a4650;
+  background-color: none;
+  border: white solid;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 -5px 5px rgba(0, 0, 0, 0.2);
   -webkit-animation: zoom-fade 1.25s ease-out infinite;
   animation: zoom-fade 1.25s ease-in-out infinite;
