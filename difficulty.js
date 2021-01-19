@@ -8,10 +8,10 @@ if (localStorage.difficulty == "Easy") {
 function difficulty(d) {
   if (d == "Easy") {
     localStorage.difficulty = "Easy";
-    localStorage.time = "2000";
+    localStorage.time = "1500";
   } else if (d == "Medium") {
     localStorage.difficulty = "Medium";
-    localStorage.time = "1500";
+    localStorage.time = "1250";
   } else if (d == "Hard") {
     localStorage.difficulty = "Hard";
     localStorage.time = "1000";
