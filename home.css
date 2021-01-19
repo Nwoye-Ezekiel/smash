@@ -43,7 +43,8 @@ body {
   background-image: url(infinity_transparent.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #02327E;
+  background-color: #707579;
+  background-size: 100px 100px;
 }
 .glass-overlay {
   position: absolute;
