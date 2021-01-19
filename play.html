@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body style="background-color: rgb(33, 87, 175)">
+    <div id="start-cont" class="cont start-cont">
+      <button
+        onclick="game_music(), counter(), localStorage.score_activated = 'yes'"
+        class="cta start-cta"
+      >
+        START
+      </button>
+      <a href="home.html"><button class="cta back-cta">QUIT</button></a>
+    </div>
+    <div onload="start()" id="counter-cont" class="cont counter-cont">
+      <div class="counter counter3">3</div>
+      <div class="counter counter2">2</div>
+      <div class="counter counter1">1</div>
+    </div>
+
+    <div id="gameover-cont" class="gameover-cont">
+      <div id="new-highscore" class="new-highscore">New Highscore!</div>
+      <div class="gameover">Game Over</div>
+      <div class="final-score">
+        Your Score: <span id="score-display"></span>
+      </div>
+      <div style="display: flex">
+        <button onclick="counter()" class="cta">Try Again</button>
+        <a href="home.html"><button class="cta">Quit</button></a>
+      </div>
+    </div>
+    <audio class="music" src="glass.mp3" style="display: none"></audio>
+    <audio class="music" src="glass.mp3" style="display: none"></audio>
+    <audio autoplay loop id="song" src="game.mp3" style="display: none"></audio>
+    <iframe
+      src="game.mp3"
+      allow="autoplay"
+      style="display: none"
+      id="iframeAudio"
+    ></iframe>
+    <div class="screen">
+      <div
+        class=""
+        style="
+          padding: 5px;
+          text-align: center;
+          border-bottom: 3px #0b1b29 solid;
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+            inset 0 5px 5px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <span class="bar">Score:</span><span id="score">0</span>
+      </div>
+      <div
+        class=""
+        style="
+          padding: 5px;
+          text-align: center;
+          border-bottom: 3px #0b1b29 solid;
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+            inset 0 5px 5px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <span class="bar">Highscore:</span><span id="highscore"></span>
+      </div>
+      <div
+        class=""
+        style="
+          padding: 5px;
+          text-align: center;
+          border-bottom: 3px #0b1b29 solid;
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+            inset 0 5px 5px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <span class="bar">Mode:</span><span id="diff"></span>
+      </div>
+    </div>
+    <table class="play_table">
+      <tr class="play_row">
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+      </tr>
+      <tr class="play_row">
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+      </tr>
+      <tr class="play_row">
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+      </tr>
+      <tr class="play_row">
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+        <td class="tile"></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="play.js"></script>
+  </body>
+</html>
