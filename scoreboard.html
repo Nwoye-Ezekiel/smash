@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body
+    style="
+      background-color: #0b1b29;
+      background-image: url(1.png);
+      background-repeat: repeat;
+    "
+    class="cnt"
+  >
+    <div class="creator" style="color: white">created by Nwoye Ezekiel</div>
+    <div class="overlay"></div>
+    <a href="home.html" class="back">Back</a>
+
+    <div class="select-cont">
+      <div onclick="display_difficulty(this)" id="select_easy" class="select">
+        Easy
+      </div>
+      <div onclick="display_difficulty(this)" id="select_medium" class="select">
+        Medium
+      </div>
+      <div onclick="display_difficulty(this)" id="select_hard" class="select">
+        Hard
+      </div>
+    </div>
+
+    <div class="highscore_name">Highscore:</div>
+    <table class="scoreboard_table">
+      <tr class="scoreboard_row">
+        <th class="scoreboard_head">Name</th>
+        <th class="scoreboard_head">Score</th>
+      </tr>
+      <tr class="scoreboard_row">
+        <td id="scoreboard_name" class="scoreboard_data"></td>
+        <td id="scoreboard_score" class="scoreboard_data"></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="scoreboard.js"></script>
+  </body>
+</html>
