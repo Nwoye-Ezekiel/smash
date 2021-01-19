@@ -14,9 +14,9 @@ $(window).load(function () {
 if (localStorage.difficulty_activated == "yes") {
   var diff = parseInt(localStorage.time, 10);
 } else if (localStorage.difficulty_activated == undefined) {
-  var diff = 2000;
+  var diff = 1500;
   localStorage.difficulty = "Easy";
-  localStorage.time = "2000";
+  localStorage.time = "1500";
 }
 
 if (localStorage.difficulty == "Easy") {
@@ -99,7 +99,7 @@ function reset() {
   document.getElementsByClassName("tile")[c].style.background = "white";
 }
 function game() {
-  var time = diff - score * 2;
+  var time = diff - score * 5;
   if (count > 0) {
     temp = 0;
     for (var i = 0; i < tile.length; i++) {
