@@ -40,8 +40,10 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif)
-    center no-repeat rgb(255, 255, 255);
+  background-image: url(infinity_transparent.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #02327E;
 }
 .glass-overlay {
   position: absolute;
