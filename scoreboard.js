@@ -10,9 +10,6 @@ if (localStorage.difficulty == "Easy") {
   document.getElementById("scoreboard_score").innerHTML =
     localStorage.scoreboard_score_hard;
 }
-$(window).load(function () {
-  $(".se-pre-con").fadeOut("slow");
-})
 function display_difficulty(x) {
   if (x.id == "select_easy") {
     document.getElementById("scoreboard_score").innerHTML =
