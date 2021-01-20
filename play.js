@@ -47,7 +47,7 @@ function game_music() {
   document.getElementById("song").play();
 }
 function check(x) {
-  if (music_counter > 1) {
+  if (music_counter > 4) {
     music_counter = 0;
   }
   if (x.style.backgroundColor == "white") {
