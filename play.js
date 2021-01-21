@@ -1,6 +1,6 @@
 var tile = document.getElementsByClassName("tile");
 var score = 0;
-var music_counter = 0;
+// var music_counter = 0;
 var current;
 var time;
 var count = 0;
@@ -47,15 +47,15 @@ function game_music() {
   document.getElementById("song").play();
 }
 function check(x) {
-  if (music_counter > 4) {
-    music_counter = 0;
-  }
+//   if (music_counter > 4) {
+//     music_counter = 0;
+//   }
   if (x.style.backgroundColor == "white") {
-    document.getElementsByClassName("music")[music_counter].play();
+    document.getElementsByClassName("music")[0].play();
     x.style.cssText =
       "background-position:center;background-size:cover;background-color:#0B1B29;background-image:url(1.png)";
     document.getElementById("score").innerHTML = ++score;
-    music_counter = music_counter + 1;
+//     music_counter = music_counter + 1;
   } else {
     gameover();
     x.style.cssText = "background-color:red;animation:vanish 1s linear 0s 2";
